@@ -1389,6 +1389,20 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@types/react@^17.0.13":
+  version "17.0.13"
+  resolved "http://npm.envisioncn.com:7001/@types/react/download/@types/react-17.0.13.tgz#6b7c9a8f2868586ad87d941c02337c6888fb874f"
+  integrity sha1-a3yajyhoWGrYfZQcAjN8aIj7h08=
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/scheduler@*":
+  version "0.16.1"
+  resolved "http://npm.envisioncn.com:7001/@types/scheduler/download/@types/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
+  integrity sha1-GIRSBehv8AOFF6q3oYpiprn3EnU=
+
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
@@ -3291,6 +3305,11 @@ csstype@^2.2.0:
   version "2.6.9"
   resolved "http://npm.envisioncn.com:7001/csstype/download/csstype-2.6.9.tgz#05141d0cd557a56b8891394c1911c40c8a98d098"
   integrity sha1-BRQdDNVXpWuIkTlMGRHEDIqY0Jg=
+
+csstype@^3.0.2:
+  version "3.0.8"
+  resolved "http://npm.envisioncn.com:7001/csstype/download/csstype-3.0.8.tgz#d2266a792729fb227cd216fb572f43728e1ad340"
+  integrity sha1-0iZqeScp+yJ80hb7Vy9Dco4a00A=
 
 cyclist@^1.0.1:
   version "1.0.1"

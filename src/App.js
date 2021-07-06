@@ -7,6 +7,10 @@ import {ThemeContext, themes} from './theme-context';
 // import ThemedButton from './themed-button';
 import ThemeTogglerButton from './theme-toggler-button';
 import {ErrorBoundary, BuggyCounter} from './ErrorBoundary';
+import CustomTextInput from './CustomTextInput';
+import AutoFocusTextInput from './AutoFocusTextInput';
+import Parent from './DomRefForwardingAlternatives';
+import FancyButton, {ParentComponent} from './ForwardRef';
 
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -44,6 +48,8 @@ function App() {
   };
   
   const sTag = <script>console.log('test');</script>;
+
+  const ref = React.createRef();
 
   return (
     <div className="App">
@@ -85,6 +91,13 @@ function App() {
       <p>These two counters are each inside of their own error boundary. So if one crashes, the other is not affected.</p>
       <ErrorBoundary><BuggyCounter /></ErrorBoundary>
       <ErrorBoundary><BuggyCounter /></ErrorBoundary>
+      <CustomTextInput />
+      <AutoFocusTextInput />
+      <Parent />
+      <br/>
+      <br/>
+      <FancyButton ref={ref}>Click me!</FancyButton>
+      <ParentComponent />
     </div>
     </div>
   );
